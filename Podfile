@@ -6,8 +6,9 @@ target 'faceevents-social' do
   use_frameworks!
 
   # Pods for faceevents-social
-  pod ‘Firebase/Core’
-  pod ‘Firebase/Auth’
-  pod ‘Firebase/Database’
-  pod ‘Firebase/Storage’		
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'FBSDKLoginKit'
 end

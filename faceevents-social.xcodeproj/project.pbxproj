@@ -27,6 +27,7 @@
 		4A2A6EAD1EBAC96900C8A74B /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		4A2A6EAF1EBACBE300C8A74B /* CrispTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrispTextField.swift; sourceTree = "<group>"; };
 		4A2A6EB11EBACD9200C8A74B /* CurvyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvyBtn.swift; sourceTree = "<group>"; };
+		4A2A6EB41EBAF09300C8A74B /* faceevents-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "faceevents-social.entitlements"; sourceTree = "<group>"; };
 		4AD2688F1EBA868200E37A4A /* faceevents-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "faceevents-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD268921EBA868200E37A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AD268941EBA868200E37A4A /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 		4AD268911EBA868200E37A4A /* faceevents-social */ = {
 			isa = PBXGroup;
 			children = (
+				4A2A6EB41EBAF09300C8A74B /* faceevents-social.entitlements */,
 				4A2A6EAA1EBAB65500C8A74B /* Util */,
 				4A2A6EA51EBA8FA100C8A74B /* Model */,
 				4A2A6EA71EBA8FBC00C8A74B /* Controller */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = C6262RXZLK;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -395,6 +402,7 @@
 			baseConfigurationReference = 8CB03004FA6F9A8088A05C71 /* Pods-faceevents-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "faceevents-social/faceevents-social.entitlements";
 				DEVELOPMENT_TEAM = C6262RXZLK;
 				INFOPLIST_FILE = "faceevents-social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -409,6 +417,7 @@
 			baseConfigurationReference = 94164A89CB6811B9FA09B32F /* Pods-faceevents-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "faceevents-social/faceevents-social.entitlements";
 				DEVELOPMENT_TEAM = C6262RXZLK;
 				INFOPLIST_FILE = "faceevents-social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
