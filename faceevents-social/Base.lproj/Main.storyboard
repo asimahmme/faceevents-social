@@ -78,7 +78,7 @@
                                                 <rect key="frame" x="0.0" y="45" width="283" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlJ-bw-fOH" customClass="CurvyBtn" customModule="faceevents_social" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="90" width="283" height="30"/>
@@ -86,6 +86,9 @@
                                                 <state key="normal" title="Sign In">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ybf-Ct-8Bb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -113,6 +116,10 @@
                             <constraint firstItem="c54-ic-uSL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="yRg-hc-7R0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="gks-Wd-k8d" id="iBJ-ol-Pgx"/>
+                        <outlet property="pwdField" destination="jPB-Ee-x38" id="yct-Nu-NIV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
