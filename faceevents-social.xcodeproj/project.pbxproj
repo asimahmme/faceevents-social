@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A2A6EA91EBAB4F600C8A74B /* SophisticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A6EA81EBAB4F600C8A74B /* SophisticatedView.swift */; };
+		4A2A6EAC1EBAB67800C8A74B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A6EAB1EBAB67800C8A74B /* Constants.swift */; };
+		4A2A6EAE1EBAC96900C8A74B /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A6EAD1EBAC96900C8A74B /* RoundBtn.swift */; };
+		4A2A6EB01EBACBE300C8A74B /* CrispTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A6EAF1EBACBE300C8A74B /* CrispTextField.swift */; };
+		4A2A6EB21EBACD9200C8A74B /* CurvyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A6EB11EBACD9200C8A74B /* CurvyBtn.swift */; };
 		4AD268931EBA868200E37A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD268921EBA868200E37A4A /* AppDelegate.swift */; };
 		4AD268951EBA868200E37A4A /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD268941EBA868200E37A4A /* SignInVC.swift */; };
 		4AD268981EBA868200E37A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD268961EBA868200E37A4A /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A2A6EA81EBAB4F600C8A74B /* SophisticatedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SophisticatedView.swift; sourceTree = "<group>"; };
+		4A2A6EAB1EBAB67800C8A74B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A2A6EAD1EBAC96900C8A74B /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		4A2A6EAF1EBACBE300C8A74B /* CrispTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrispTextField.swift; sourceTree = "<group>"; };
+		4A2A6EB11EBACD9200C8A74B /* CurvyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvyBtn.swift; sourceTree = "<group>"; };
 		4AD2688F1EBA868200E37A4A /* faceevents-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "faceevents-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD268921EBA868200E37A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AD268941EBA868200E37A4A /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -69,6 +79,10 @@
 		4A2A6EA61EBA8FB500C8A74B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4A2A6EA81EBAB4F600C8A74B /* SophisticatedView.swift */,
+				4A2A6EAD1EBAC96900C8A74B /* RoundBtn.swift */,
+				4A2A6EAF1EBACBE300C8A74B /* CrispTextField.swift */,
+				4A2A6EB11EBACD9200C8A74B /* CurvyBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -79,6 +93,14 @@
 				4AD268941EBA868200E37A4A /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		4A2A6EAA1EBAB65500C8A74B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4A2A6EAB1EBAB67800C8A74B /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		4AD268861EBA868200E37A4A = {
@@ -102,6 +124,7 @@
 		4AD268911EBA868200E37A4A /* faceevents-social */ = {
 			isa = PBXGroup;
 			children = (
+				4A2A6EAA1EBAB65500C8A74B /* Util */,
 				4A2A6EA51EBA8FA100C8A74B /* Model */,
 				4A2A6EA71EBA8FBC00C8A74B /* Controller */,
 				4A2A6EA61EBA8FB500C8A74B /* View */,
@@ -241,7 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AD268951EBA868200E37A4A /* SignInVC.swift in Sources */,
+				4A2A6EB21EBACD9200C8A74B /* CurvyBtn.swift in Sources */,
+				4A2A6EAE1EBAC96900C8A74B /* RoundBtn.swift in Sources */,
+				4A2A6EA91EBAB4F600C8A74B /* SophisticatedView.swift in Sources */,
 				4AD268931EBA868200E37A4A /* AppDelegate.swift in Sources */,
+				4A2A6EAC1EBAB67800C8A74B /* Constants.swift in Sources */,
+				4A2A6EB01EBACBE300C8A74B /* CrispTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
