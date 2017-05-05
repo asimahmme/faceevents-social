@@ -14,11 +14,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
 
     
      @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var addImage: CircleImageView!
+    @IBOutlet weak var captionField: UITextField!
     
-    
-     var posts = [Post]()
+    var posts = [Post]()
     var imagePicker: UIImagePickerController!
     
     //static var imageCache: Cache<NSString, UIImage> = Cache()
@@ -100,6 +99,34 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
     }
 
+    @IBAction func postBtnTapped(_ sender: Any) {
+        guard let caption = captionField.text, caption != "" else {
+            print("ASIM: Caption must be entered")
+            return
+        }
+        guard let img = addImage.image, imageSelected == true else {
+            print("ASIM: An image must be selected")
+            return
+        }
+        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+            
+            let imgUid = NSUUID().uuidString
+            let metadata = FIRStorageMetadata()
+            metadata.contentType = "image/jpeg"
+            
+            DataService.ds.REF_POST_IMAGES.child(imgUid).put(imgData, metadata: metadata) { (metadata, error) in
+                if error != nil {
+                    print("ASIM: Unable to upload image to Firebasee torage")
+                } else {
+                    print("ASIM: Successfully uploaded image to Firebase storage")
+                    let downloadURL = metadata?.downloadURL()?.absoluteString
+                    //if let url = downloadURL {
+                    //    self.postToFirebase(imgUrl: url)
+                    //}
+                }
+            }
+        }
+    }
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult  = KeychainWrapper.standard.remove(key:KEY_UID)
         print("ASIM: ID removed from keychain \(keychainResult)")
