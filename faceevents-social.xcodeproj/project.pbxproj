@@ -16,6 +16,7 @@
 		4A2A6EB81EBBC4D900C8A74B /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A6EB71EBBC4D900C8A74B /* CircleImageView.swift */; };
 		4A2A6EBA1EBBD77E00C8A74B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A6EB91EBBD77E00C8A74B /* PostCell.swift */; };
 		4A2A6EBD1EBBF87F00C8A74B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A6EBC1EBBF87F00C8A74B /* DataService.swift */; };
+		4A2A6EBF1EBC21A200C8A74B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A6EBE1EBC21A200C8A74B /* Post.swift */; };
 		4AD268931EBA868200E37A4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD268921EBA868200E37A4A /* AppDelegate.swift */; };
 		4AD268951EBA868200E37A4A /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD268941EBA868200E37A4A /* SignInVC.swift */; };
 		4AD268981EBA868200E37A4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD268961EBA868200E37A4A /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		4A2A6EB71EBBC4D900C8A74B /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		4A2A6EB91EBBD77E00C8A74B /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		4A2A6EBC1EBBF87F00C8A74B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4A2A6EBE1EBC21A200C8A74B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		4AD2688F1EBA868200E37A4A /* faceevents-social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "faceevents-social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD268921EBA868200E37A4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AD268941EBA868200E37A4A /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		4A2A6EA51EBA8FA100C8A74B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4A2A6EBE1EBC21A200C8A74B /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				4AD268951EBA868200E37A4A /* SignInVC.swift in Sources */,
 				4A2A6EB81EBBC4D900C8A74B /* CircleImageView.swift in Sources */,
 				4A2A6EB21EBACD9200C8A74B /* CurvyBtn.swift in Sources */,
+				4A2A6EBF1EBC21A200C8A74B /* Post.swift in Sources */,
 				4A2A6EAE1EBAC96900C8A74B /* RoundBtn.swift in Sources */,
 				4A2A6EA91EBAB4F600C8A74B /* SophisticatedView.swift in Sources */,
 				4A2A6EBD1EBBF87F00C8A74B /* DataService.swift in Sources */,
