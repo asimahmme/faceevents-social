@@ -15,13 +15,27 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
      @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var addImage: CircleImageView!
+    
+    
      var posts = [Post]()
+    var imagePicker: UIImagePickerController!
+    
+    //static var imageCache: Cache<NSString, UIImage> = Cache()
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    var imageSelected = false
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.delegate = self
         tableView.dataSource = self
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
+
         
         DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
@@ -71,6 +85,20 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         // Dispose of any resources that can be recreated.
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            addImage.image = image
+            imageSelected = true
+        } else {
+            print("ASIM: A valid image wasn't selected")
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func addImageTapped(_ sender: Any) {
+        present(imagePicker, animated: true, completion: nil)
+        
+    }
 
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult  = KeychainWrapper.standard.remove(key:KEY_UID)
